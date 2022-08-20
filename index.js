@@ -6,7 +6,7 @@ const port = 3000
 
 app.use(cors())
 
-app.get('/sound/:name', (req, res) => {
+app.get('/picture/:name', (req, res) => {
     const {name} = req.params
     if(name=="dog"){
         res.send("<img src='https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA4MTlfMjk0%2FMDAxNjI5MzYxNTA2MjM4.mKGKHNqspjtRblXWp-NLggUVV3PqlYDZiETul8xAbnAg.6EhnjnXs3E8AsJZQ_zcXBneDdUx-9IV-2vlaUDOw-D8g.JPEG.yeoldo_dal%2F2.jpg&type=sc960_832'>")
